@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Adding favicon -->
+    <!--CDN Link to Flaticon icons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+     <!--CDN Link to Bootstrap 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--CDN Link to JQuery Slick CSS Library -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Alex Supermarket</title>
+</head>
+<body>
+    <header class="">
+        <nav class="desktop-navigation d-none d-md-block">
+            <div class="container-fluid container-md">
+                <div class="top-navigation d-flex justify-content-between py-1 align-items-center position-relative ">
+                    <div class="nav-search d-flex align-items-center">
+                        <input type="text" name="" id="" placeholder="Search here..." class="">
+                        <button class="ms-2 pt-2"><i class="fi fi-rr-search"></i></button>
+                    </div>
+                    <div class="logo">
+                        <h1><span>JERSEY TOY </span></h1>
+                    </div>
+                    <div class="sign-up d-flex justify-content-end ">
+                        <a href="" class="text-light me-2">Login</a>
+                        <a href="" class="text-light"><i class="fi fi-rr-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <div class="bottom-navigation">
+                    <ul class="w-100 d-flex justify-content-center">
+                        <li><a href="#" class="text-white p-3 float-start   active">Home</a></li>
+                        <li><a href="#" class="text-white p-3 float-start  ">Our Story</a></li>
+                        <li class="position-relative ">
+                            <a href="" class="text-white p-3 float-start " id="toggle-menu">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="sub-menu position-absolute bg-white p-4 shadow container ">
+                                <div class="row">
+                                    <div class="sub-menu-column d-block col-4 ">
+                                        <p>Shop by Category</p>
+                                        <ul class="d-block ">
+                                            <li><a href="">Baby Fashion</a></li>
+                                            <li><a href="">Health products</a></li>
+                                            <li><a href="">Home Items </a></li>
+                                            <li><a href="">Safety</a></li>
+                                            <li><a href="">Phones and gadgets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column d-block col-4 border-start border-end ">
+                                        <p>Top Brands</p>
+                                        <ul class="d-block ">
+                                            <li><a href="">Iphones</a></li>
+                                            <li><a href="">tecno</a></li>
+                                            <li><a href="">fashion</a></li>
+                                            <li><a href="">baby</a></li>
+                                            <li><a href="">safety</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column d-block col-4 ">
+                                        <p>Quick Links</p>
+                                        <ul class="d-block ">
+                                            <li><a href="">Login / Register</a></li>
+                                            <li><a href="">Refund Policy</a></li>
+                                            <li><a href="">Privacy Policy</a></li>
+                                            <li><a href="">Terms & Conditions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="" class="text-white p-3 float-start  ">Projects</a></li>
+                        <li><a href="" class="text-white p-3 float-start  ">Media Center</a></li>
+                        <li><a href="" class="text-white p-3 float-start  ">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="mobile-navigation d-block d-md-none position-relative ">
+            <div class="visible-mobile container-fluid px-3">
+                <div class="d-flex align-items-center justify-content-between py-2 ">
+                    <div class="mobile-logo">
+                        <h1><span>K</span>onstruct</h1>
+                    </div>
+                    <button class="text-white mt-2 fs-2 menu-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden-mobile position-absolute w-100">
+                <div class="">
+                    <ul>
+                        <li class=""><a href="" class="p-3 d-block text-center">Home</a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">Our Story</a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">Projects</a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">Media Center</a></li>
+                        <li class=""><a href="" class="p-3 d-block text-center">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid container-md">
+        <section class="home-banner-wrapper pb-3 pb-md-5">
+            <div class="home-banner pb-3">
+                <figure>
+                    <img src="baby1.jpeg" alt="" height="600px" width="800px">
+                </figure>
+                <div class="home-banner-content p-3 p-md-4 text-center d-flex flex-column ">
+                    <h1 class="text-white fs-3 fs-xl-2">Let us make an impact</h1>
+                    <a href="" class="mt-2 text-white border-bottom float-start align-self-center">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-services-wrapper py-4 py-md-5 border-top">
+            <h2 class="text-center pb-1 pb-md-3 text-uppercase fw-600">Our Services</h2>
+            <ul class="home-services-list px-4 pb-2 pb-md-1">
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="baby2.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Baby clothing</h3>
+                                <p>Shoes sales </p>
+                            </div>
+                            <a href="#" class="btn float-start mt-2 d-flex align-items-center ">Read More <i class="fi fi-rs-arrow-right ms-2 "></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="baby3.jpeg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Baby Clothing</h3>
+                                <p>Clothes sales</p>
+                            </div>
+                            <a href="#" class="btn float-start mt-2 d-flex align-items-center ">Read More <i class="fi fi-rs-arrow-right ms-2 "></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="baby4.jpeg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Baby Clothing</h3>
+                                <p>leather baby clothes</p>
+                            </div>
+                            <a href="#" class="btn float-start mt-2 d-flex align-items-center ">Read More <i class="fi fi-rs-arrow-right ms-2 "></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="safety1.jpeg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Safety material</h3>
+                                <p>Original mask from kemsa</p>
+                            </div>
+                            <a href="#" class="btn float-start mt-2 d-flex align-items-center ">Read More <i class="fi fi-rs-arrow-right ms-2 "></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="phone2.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">Phone sales</h3>
+                                <p>Original ipone from samsumg</p>
+                            </div>
+                            <a href="#" class="btn float-start mt-2 d-flex align-items-center ">Read More <i class="fi fi-rs-arrow-right ms-2 "></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <div class="h-100">
+                        <img src="phone3.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <div class="services-list-content">
+                            <div>
+                                <h3 class="pt-3 fs-3 pb-2">phones sales </h3>
+                                <p>tecno 23c phone</p>
+                            </div>
+                            <a href="#" class="btn float-start mt-2 d-flex align-items-center ">Read More <i class="fi fi-rs-arrow-right ms-2 "></i></a>
+                        </div>
+                    </div>
+                </li>
+                
+               
+            </ul>
+            <div class="services-video pt-2 pt-md-5 position-relative w-100 ">
+                <video src="videos/contruction-medium.mp4" controls loop class="w-100 video">
+                    Unsupported
+                </video>
+                <div class="services-video-content p-3 p-md-4 text-center d-flex flex-column ">
+                    <h1 class="text-white fs-3 fs-xl-2">Quality and Affordable Services</h1>
+                    <a href="" class="mt-2 text-white border-bottom float-start align-self-center">Explore Services </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-products-wrapper py-3 py-md-5 border-top border-bottom">
+            <h2 class="text-center pb-1 pb-md-3 text-uppercase fw-600">Our Best-Selling Products</h2>
+            <ul class="home-products-list px-4 pb-2 pb-md-1">
+                <li class="px-lg-3 px-2">
+                    <a href class="h-100">
+                        <figure class="position-relative ">
+                            <img src="fashion3.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                            <div class="offer-badge d-flex align-items-center  justify-content-center  position-absolute top-0 end-0 ">
+                                <p class="text-center lh-1 fs-5"><span class="fw-light d-block ">Hot</span> SALE</p>
+                            </div>
+                        </figure>
+                        <div class="products-list-content ">
+                            <h3 class="pt-3 fs-5">Nekey Wall Mounted Basin and Pedestal Set</h3>
+                            <p class="pt-1 product-price">Ksh 20,000.00</p>
+                            <button class="mt-2 p-2 d-flex align-items-center">Add to Cart <i class="fa-solid fa-plus ms-2 "></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <a href="#" class="h-100">
+                        <figure class="position-relative ">
+                            <img src="fashion2.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                            <div class="offer-badge d-flex align-items-center  justify-content-center  position-absolute top-0 end-0 ">
+                                <p class="text-center lh-1 offer-discount">8% <span class="d-block ">OFF</span></p>
+                            </div>
+                        </figure>
+                        <div class="products-list-content ">
+                            <h3 class="pt-3 fs-5">Lastest Faashion in town</h3>
+                            <p class="pt-1 product-price">Ksh 1,850.00 <span class="fs-6 text-decoration-line-through ">Ksh 2,000.00</span></p>
+                            <button class="mt-2 p-2 d-flex align-items-center">Add to Cart <i class="fa-solid fa-plus ms-2 "></i></button>
+                        </a>
+                    </div>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <a href="" class="h-100">
+                        <figure class="position-relative ">
+                            <img src="baby1.jpeg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                            <div class="offer-badge d-flex align-items-center  justify-content-center  position-absolute top-0 end-0 ">
+                                <p class="text-center lh-1 fs-5"><span class="fw-light d-block ">Hot</span> SALE</p>
+                            </div>
+                        </figure>
+                        <div class="products-list-content ">
+                            <h3 class="pt-3 fs-5">White shirt American boys</h3>
+                            <p class="pt-1 product-price">Ksh 900.00</p>
+                            <button class="mt-2 p-2 d-flex align-items-center">Add to Cart <i class="fa-solid fa-plus ms-2 "></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <a href="" class="h-100">
+                        <figure class="position-relative ">
+                            <img src="home1.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                            <div class="offer-badge d-flex align-items-center  justify-content-center  position-absolute top-0 end-0 ">
+                                <p class="text-center lh-1 fs-5"><span class="fw-light d-block ">Hot</span> SALE</p>
+                            </div>
+                        </figure>
+                        <div class="products-list-content ">
+                            <h3 class="pt-3 fs-5">Baby white wire</h3>
+                            <p class="pt-1 product-price">Ksh 1,000.00</p>
+                            <button class="mt-2 p-2 d-flex align-items-center">Add to Cart <i class="fa-solid fa-plus ms-2 "></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <a href="" class="h-100">
+                        <figure class="position-relative ">
+                            <img src="baby2.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                            <div class="offer-badge d-flex align-items-center  justify-content-center  position-absolute top-0 end-0 ">
+                                <p class="text-center lh-1 offer-discount">12% <span>OFF</span></p>
+                            </div>
+                        </figure>
+                        <div class="products-list-content ">
+                            <h3 class="pt-3 fs-5">Baby white shoes</h3>
+                            <p class="pt-1 product-price">Ksh 4000.00 <span class="fs-6 text-decoration-line-through ">Ksh 4500.00</span></p>
+                            <button class="mt-2 p-2 d-flex align-items-center">Add to Cart <i class="fa-solid fa-plus ms-2 "></i></button>
+                        </div>
+                    </a>
+                </li>
+                <li class="px-lg-3 px-2">
+                    <a href="" class="h-100">
+                        <figure class="position-relative ">
+                            <img src="home1.webp" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                            <div class="offer-badge d-flex align-items-center  justify-content-center  position-absolute top-0 end-0 ">
+                                <p class="text-center lh-1 fs-5"><span class="fw-light d-block ">Hot</span> SALE</p>
+                            </div>
+                        </figure>
+                        <div class="products-list-content ">
+                            <h3 class="pt-3 fs-5">Chair 4legged wood</h3>
+                            <p class="pt-1 product-price">Ksh 3,500.00</p>
+                            <button class="mt-2 p-2 d-flex align-items-center">Add to Cart <i class="fa-solid fa-plus ms-2 "></i></button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="home-about-wrapper py-3 py-md-5 row mx-0 mx-lg-3 align-items-stretch ">
+            <div class="home-about-content h-100 align-self-stretch col-xs-12 col-lg-7 col-xl-6 py-2 py-md-3 py-lg-4 py-xl-5 px-sm-0 px-md-1 px-lg-4 px-xl-5 order-2 order-lg-1">
+                <div class="d-flex flex-column h-100 ">
+                    <div>
+                        <h4 class="mb-2 fs-4 fw-normal">Welcome to <span>JERSEY</span>TOY Centre</h4>
+                        <h2 class="mb-2 fs-3">Quality and Affordable Construction Solutions</h2>
+                        <p class="pb-2">
+                            At our online store, we go the extra mile to ensure your online shopping experience is seamless and gratifying. Benefit from our delivery service, bringing your purchases directly to your doorstep, making your experience utterly hassle-free. What's more, we offer a wide range of products with free delivery & shipping, making your shopping even more convenient and economical. So, browse our selection and enjoy the added benefit of no shipping charges on these items. Shop with confidence in our official stores, where authenticity is guaranteed. Searching for quality without breaking the bank when you buy online? Explore our refurbished options, offering like-new products at budget-friendly prices. Discover the world at your doorstep with Jumia Global! Our handpicked selection of top products shipped from abroad brings the best of international quality and innovation right to your fingertips.
+                        </p>
+                        <p class="pb-2 ">
+                            Mark your calendar for our spectacular campaign events. Tech Week is your portal to the latest technological innovations, Jumia Anniversary celebrates fantastic deals,Black Friday promises to be the shopping extravaganza of the year, and the Jumia Festival is your exclusive ticket to a world of savings on your favorite brands. Join these events for the ultimate online shopping experience brimming with exciting stock clearance sales, discounts, and products that cater to your every need when you buy online. Ensure you're part of the excitement!
+
+                            At Jumia Kenya, we've brought the entire shopping universe right to your fingertips. We're not just an online store; we're your ally in discovering the finest online sales, premium offers, captivating deals, and unparalleled discounts. Shop with us today and embrace the future of online shopping
+                        </p>
+                    </div>
+                    <a href="#" class="learn-more-btn mt-2 mt-xl-5 align-self-start px-4 text-uppercase d-flex align-items-center">Learn More <i class="fi fi-rs-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <figure class="col-xs-12 col-lg-5 col-xl-6 py-3 px-0 ps-0 ps-xl-4 order-1 order-lg-2 ">
+                <img src="images/home-about.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+            </figure>
+        </section>
+
+        <section class="home-team-wrapper py-3 py-md-5 border-top">
+            <h2 class="text-center text-uppercase pb-2">Our Team</h2>
+            <ul class="home-team-list row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5 ">
+                <li class="col mb-3 mb-md-4 mb-lg-0 ">
+                    <figure class="position-relative">
+                        <img src="person1.jpeg" alt="Team Member">
+                        <div class="position-absolute start-0 end-0 bottom-0 px-4 pt-5 pb-3 team-list-content">
+                            <h3 class="text-white">Emily Kor</h3>
+                            <h4 class="text-white fw-lighter fs-5">general manager</h4>
+                        </div>
+                        <a href="" target="_blank" class="team-link position-absolute bottom-0 end-0 px-4 py-3 text-white "><i class="fa-brands fa-linkedin"></i></a>
+                    </figure>
+                </li>
+                <li class="col mb-3 mb-md-4 mb-lg-0 ">
+                    <figure class="position-relative">
+                        <img src="person2.jpeg" alt="Team Member">
+                        <div class="position-absolute start-0 end-0 bottom-0 px-4 pt-5 pb-3 team-list-content">
+                            <h3 class="text-white">Elizabeth Kar</h3>
+                            <h4 class="text-white fw-lighter fs-5">Departmental Manager</h4>
+                        </div>
+                        <a href="" target="_blank" class="team-link position-absolute bottom-0 end-0 px-4 py-3 text-white "><i class="fa-brands fa-linkedin"></i></a>
+                    </figure>
+                </li>
+                <li class="col mb-3 mb-md-4 mb-lg-0 ">
+                    <figure class="position-relative">
+                        <img src="person3.jpeg" alt="Team Member">
+                        <div class="position-absolute start-0 end-0 bottom-0 px-4 pt-5 pb-3 team-list-content">
+                            <h3 class="text-white">Joyline sasha</h3>
+                            <h4 class="text-white fw-lighter fs-5">sales manager</h4>
+                        </div>
+                        <a href="" target="_blank" class="team-link position-absolute bottom-0 end-0 px-4 py-3 text-white "><i class="fa-brands fa-linkedin"></i></a>
+                    </figure>
+                </li>
+                <li class="col mb-3 mb-md-4 mb-lg-0 ">
+                    <figure class="position-relative">
+                        <img src="person4.jpeg" alt="Team Member">
+                        <div class="position-absolute start-0 end-0 bottom-0 px-4 pt-5 pb-3 team-list-content">
+                            <h3 class="text-white">Mia shojo</h3>
+                            <h4 class="text-white fw-lighter fs-5">Monertary Manager</h4>
+                        </div>
+                        <a href="" target="_blank" class="team-link position-absolute bottom-0 end-0 px-4 py-3 text-white "><i class="fa-brands fa-linkedin"></i></a>
+                    </figure>
+                </li>
+                <li class="col mb-3 mb-md-4 mb-lg-0 ">
+                    <figure class="position-relative">
+                        <img src="person5.jpeg" alt="Team Member">
+                        <div class="position-absolute start-0 end-0 bottom-0 px-4 pt-5 pb-3 team-list-content">
+                            <h3 class="text-white">J SHEE dee</h3>
+                            <h4 class="text-white fw-lighter fs-5">It consultant</h4>
+                        </div>
+                        <a href="" target="_blank" class="team-link position-absolute bottom-0 end-0 px-4 py-3 text-white "><i class="fa-brands fa-linkedin"></i></a>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="">
+        
+    
+  
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul class="links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Compressions</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Collection</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="links">
+            <li><a href="#">Free Designs</a></li>
+            <li><a href="#">Latest Designs</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Popular Designs</a></li>
+            <li><a href="#">Art Skills</a></li>
+            <li><a href="#">New Uploads</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="links">
+            <li><a href="#">Customer Agreement</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">GDPR</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter for a weekly dose
+            of news, updates, helpful tips, and
+            exclusive offers.
+          </p>
+          <form action="#">
+            <input type="text" placeholder="Your email" required>
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+      </div>
+    
+      <style>
+        /* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.footer {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  background: #10182F;
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+      </style>
+    </footer>
+
+     <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- Fontawesome CDN Link-->
+    <script src="https://kit.fontawesome.com/39a57ebc35.js" crossorigin="anonymous"></script>
+    <!-- Slick Slider JS CDN Link-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> <!--CDN Link to Slick Slider JS Library -->
+    <script src="script.js"></script>
+
+</body>
+</html>
